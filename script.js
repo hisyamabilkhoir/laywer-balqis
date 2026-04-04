@@ -132,12 +132,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Chatbot knowledge base
   const botResponses = {
     'services': 'Kami menyediakan layanan:\n\n📋 Konsultasi Hukum\n🏛️ Pendampingan Kasus\n📝 Penyusunan Kontrak\n🤝 Mediasi Hukum\n\nSemua layanan ditangani langsung oleh pengacara berpengalaman.',
-    'consultation': 'Untuk booking konsultasi:\n\n1️⃣ Isi form di halaman Contact\n2️⃣ Hubungi WhatsApp: +62 859-7372-9267\n3️⃣ Email: contact@abilkhoirlaw.com\n\nKonsultasi awal GRATIS! 📞',
+    'consultation': 'Untuk booking konsultasi:\n\n1️⃣ Isi form di halaman Contact\n2️⃣ Hubungi WhatsApp: +62 859-7372-9267\n3️⃣ Email: contact@balqismaulina.web.id\n\nKonsultasi awal GRATIS! 📞',
     'hours': 'Jam operasional kantor kami:\n\n🕐 Senin - Jumat: 09:00 - 18:00 WIB\n📅 Weekend: By Appointment\n\nUntuk konsultasi darurat, silakan hubungi WhatsApp kami kapan saja.',
     'practice': 'Area praktik kami meliputi:\n\n🏢 Hukum Perusahaan\n⚖️ Hukum Pidana\n📋 Hukum Perdata\n👨‍👩‍👧 Hukum Keluarga\n💡 Hak Kekayaan Intelektual\n🏛️ Hukum Ketenagakerjaan',
     'price': 'Biaya layanan bervariasi tergantung jenis kasus. Konsultasi awal GRATIS.\n\nUntuk penawaran detail, silakan hubungi kami melalui WhatsApp atau isi form konsultasi di website.',
     'location': 'Kantor kami berlokasi di:\n\n📍 350 Fifth Avenue, Suite 4800\nNew York, NY 10118\n\nKunjungi kami pada jam kerja atau buat janji terlebih dahulu.',
-    'default': 'Terima kasih atas pertanyaannya! 😊\n\nUntuk informasi lebih detail, silakan:\n📞 WhatsApp: +62 859-7372-9267\n📧 Email: contact@abilkhoirlaw.com\n\nAtau isi form konsultasi di halaman Contact.'
+    'default': 'Terima kasih atas pertanyaannya! 😊\n\nUntuk informasi lebih detail, silakan:\n📞 WhatsApp: +62 859-7372-9267\n📧 Email: contact@balqismaulina.web.id\n\nAtau isi form konsultasi di halaman Contact.'
   };
 
   function getKeywords(text) {
