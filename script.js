@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (service) waMessage += `*Layanan:* ${service}\n`;
       waMessage += `\n*Pesan:*\n${message}`;
 
-      const waURL = `https://wa.me/6285973729267?text=${encodeURIComponent(waMessage)}`;
+      const waURL = `https://wa.me/6285190665556?text=${encodeURIComponent(waMessage)}`;
 
       btn.textContent = 'Mengirim...';
       btn.disabled = true;
@@ -132,12 +132,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Chatbot knowledge base
   const botResponses = {
     'services': 'Kami menyediakan layanan:\n\n📋 Konsultasi Hukum\n🏛️ Pendampingan Kasus\n📝 Penyusunan Kontrak\n🤝 Mediasi Hukum\n\nSemua layanan ditangani langsung oleh pengacara berpengalaman.',
-    'consultation': 'Untuk booking konsultasi:\n\n1️⃣ Isi form di halaman Contact\n2️⃣ Hubungi WhatsApp: +62 859-7372-9267\n3️⃣ Email: contact@balqismaulina.web.id\n\nKonsultasi awal GRATIS! 📞',
+    'consultation': 'Untuk booking konsultasi:\n\n1️⃣ Isi form di halaman Contact\n2️⃣ Hubungi WhatsApp: 085190665556\n3️⃣ Email: Balqismaulina96@gmail.com\n\nKonsultasi awal GRATIS! 📞',
     'hours': 'Jam operasional kantor kami:\n\n🕐 Senin - Jumat: 09:00 - 18:00 WIB\n📅 Weekend: By Appointment\n\nUntuk konsultasi darurat, silakan hubungi WhatsApp kami kapan saja.',
     'practice': 'Area praktik kami meliputi:\n\n🏢 Hukum Perusahaan\n⚖️ Hukum Pidana\n📋 Hukum Perdata\n👨‍👩‍👧 Hukum Keluarga\n💡 Hak Kekayaan Intelektual\n🏛️ Hukum Ketenagakerjaan',
     'price': 'Biaya layanan bervariasi tergantung jenis kasus. Konsultasi awal GRATIS.\n\nUntuk penawaran detail, silakan hubungi kami melalui WhatsApp atau isi form konsultasi di website.',
-    'location': 'Kantor kami berlokasi di:\n\n📍 350 Fifth Avenue, Suite 4800\nNew York, NY 10118\n\nKunjungi kami pada jam kerja atau buat janji terlebih dahulu.',
-    'default': 'Terima kasih atas pertanyaannya! 😊\n\nUntuk informasi lebih detail, silakan:\n📞 WhatsApp: +62 859-7372-9267\n📧 Email: contact@balqismaulina.web.id\n\nAtau isi form konsultasi di halaman Contact.'
+    'location': 'Kantor kami berlokasi di:\n\n📍 DKI Jakarta, Indonesia\n\nKunjungi kami pada jam kerja atau buat janji terlebih dahulu.',
+    'default': 'Terima kasih atas pertanyaannya! 😊\n\nUntuk informasi lebih detail, silakan:\n📞 WhatsApp: 085190665556\n📧 Email: Balqismaulina96@gmail.com\n\nAtau isi form konsultasi di halaman Contact.'
   };
 
   function getKeywords(text) {
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // TYPEWRITER EFFECT — HERO
   // =============================================
   const typewriterEl = document.getElementById('heroTypewriter');
-  const typewriterText = 'Corporate & Criminal Attorney — Delivering strategic legal solutions with integrity, precision, and an unwavering commitment to justice.';
+  const typewriterText = 'A legal professional specializing in corporate and criminal law, and the founder of DOFELA RIZKI LAW OFFICE. Known for her strategic insight, integrity, and results-driven approach. She is also committed to legal education, making the law more accessible to the public.';
 
   if (typewriterEl) {
     let charIndex = 0;
