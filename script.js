@@ -85,18 +85,40 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = this.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
 
-      const name = document.getElementById('formName').value.trim();
-      const email = document.getElementById('formEmail').value.trim();
-      const phone = document.getElementById('formPhone').value.trim();
-      const service = document.getElementById('formService').value;
-      const message = document.getElementById('formMessage').value.trim();
+      const name = document.getElementById('formName') ? document.getElementById('formName').value.trim() : '';
+      const email = document.getElementById('formEmail') ? document.getElementById('formEmail').value.trim() : '';
+      const phone = document.getElementById('formPhone') ? document.getElementById('formPhone').value.trim() : '';
+      const service = document.getElementById('formService') ? document.getElementById('formService').value : '';
+      const method = document.getElementById('formMethod') ? document.getElementById('formMethod').value : '';
+      const prefDate = document.getElementById('formDate') ? document.getElementById('formDate').value.trim() : '';
+      const message = document.getElementById('formMessage') ? document.getElementById('formMessage').value.trim() : '';
 
-      let waMessage = `Halo, saya ingin berkonsultasi.\n\n`;
-      waMessage += `*Nama:* ${name}\n`;
-      waMessage += `*Email:* ${email}\n`;
-      if (phone) waMessage += `*Telepon:* ${phone}\n`;
-      if (service) waMessage += `*Layanan:* ${service}\n`;
-      waMessage += `\n*Pesan:*\n${message}`;
+      let formattedDate = prefDate;
+      if (prefDate) {
+        const d = new Date(prefDate);
+        if (!isNaN(d)) {
+          const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+          const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+          formattedDate = `${days[d.getDay()]}, ${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()} Pukul ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')} WIB`;
+        }
+      }
+
+      let waMessage = `*DOFELA RIZKI LAW OFFICE*\n*Consultation Request Form*\n\n`;
+      waMessage += `*Client Information*\n`;
+      waMessage += `Full Name: ${name}\n`;
+      waMessage += `Email Address: ${email}\n`;
+      waMessage += `Phone / WhatsApp Number: ${phone}\n\n`;
+      
+      waMessage += `*Legal Matter Details*\n`;
+      waMessage += `Type of Legal Matter:\n- ${service}\n\n`;
+      waMessage += `*Brief Description of the Matter:*\n${message}\n\n`;
+      
+      waMessage += `*Consultation Preferences*\n`;
+      waMessage += `Preferred Consultation Method:\n- ${method}\n\n`;
+      waMessage += `Preferred Date & Time:\n${formattedDate}\n\n`;
+      
+      waMessage += `*Confidentiality*\n`;
+      waMessage += `All information provided will be treated with strict confidentiality.`;
 
       const waURL = `https://wa.me/6285190665556?text=${encodeURIComponent(waMessage)}`;
 

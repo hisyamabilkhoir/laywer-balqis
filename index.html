@@ -87,16 +87,20 @@
         </div>
         <div class="hero-stats">
           <div class="stat">
-            <h3>15+</h3>
-            <p>Years Experience</p>
+            <h3>5+</h3>
+            <p>Years of Practice</p>
           </div>
           <div class="stat">
-            <h3>500+</h3>
-            <p>Cases Won</p>
+            <h3>50+</h3>
+            <p>Matters Handled</p>
           </div>
           <div class="stat">
-            <h3>98%</h3>
+            <h3>90%+</h3>
             <p>Success Rate</p>
+          </div>
+          <div class="stat">
+            <h3 style="font-size: clamp(14px, 2.5vw, 26px); line-height: 1.2; margin-top: 4px;">By Referral</h3>
+            <p>Trusted Clients</p>
           </div>
         </div>
       </div>
@@ -477,17 +481,27 @@
             <input type="email" placeholder="Email Address" required id="formEmail" />
           </div>
           <div class="form-row">
-            <input type="tel" placeholder="Phone Number" id="formPhone" />
-            <select id="formService">
-              <option value="" disabled selected>Select Service</option>
-              <option>Legal Consultation</option>
-              <option>Case Representation</option>
-              <option>Contract Drafting</option>
-              <option>Legal Mediation</option>
-              <option>Other</option>
+            <input type="tel" placeholder="Phone / WhatsApp Number" required id="formPhone" />
+            <select id="formService" required>
+              <option value="" disabled selected>Type of Legal Matter</option>
+              <option>Corporate Law</option>
+              <option>Criminal Defense</option>
+              <option>Civil Dispute</option>
+              <option>Labor & Employment</option>
+              <option>Intellectual Property</option>
+              <option>Family Law</option>
             </select>
           </div>
-          <textarea placeholder="Tell us about your case..." rows="5" required id="formMessage"></textarea>
+          <div class="form-row">
+            <select id="formMethod" required>
+              <option value="" disabled selected>Preferred Consultation Method</option>
+              <option>In-Person</option>
+              <option>Online (Zoom/Meet)</option>
+              <option>WhatsApp</option>
+            </select>
+            <input type="datetime-local" title="Preferred Date & Time" required id="formDate" style="cursor: pointer; color-scheme: dark;" onclick="try { this.showPicker(); } catch(e) {}" />
+          </div>
+          <textarea placeholder="Brief Description of the Matter..." rows="5" required id="formMessage"></textarea>
           <button type="submit" class="btn btn-gold" style="justify-content: center">Send Message</button>
           <div class="form-success" id="formSuccess">✅ Thank you! Your message has been sent successfully. We will
             contact you within 24 hours.</div>
