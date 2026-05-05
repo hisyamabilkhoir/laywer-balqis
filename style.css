@@ -545,6 +545,18 @@ nav .container {
   overflow: hidden;
 }
 
+.about-logo {
+  width: 65%;
+  max-width: 280px;
+  height: auto;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.3));
+  transition: var(--transition);
+}
+
+.about-image:hover .about-logo {
+  transform: scale(1.05);
+}
+
 .about-image-placeholder::after {
   content: "";
   position: absolute;
