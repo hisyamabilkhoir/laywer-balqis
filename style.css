@@ -2028,14 +2028,18 @@ footer a {
 }
 
 .blog-meta {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 12px;
+  font-size: 11px;
   color: var(--gold);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin-bottom: 12px;
+  line-height: 1.6;
+}
+.blog-meta span {
+  display: inline;
+}
+.blog-meta span:nth-child(2) {
+  margin: 0 6px;
 }
 
 .blog-card h3 {
@@ -2112,11 +2116,16 @@ footer a {
 }
 
 .post-meta-detailed {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
+  text-align: center;
   font-size: 14px;
   color: var(--gold);
+  line-height: 1.8;
+}
+.post-meta-detailed span {
+  display: inline-block;
+}
+.post-meta-detailed span:nth-child(even) {
+  margin: 0 12px;
 }
 
 .blog-post-content {
