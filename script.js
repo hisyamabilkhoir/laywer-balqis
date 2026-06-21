@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'hours': 'Jam operasional kantor kami:\n\n🕐 Senin - Jumat: 09:00 - 18:00 WIB\n📅 Weekend: By Appointment\n\nUntuk konsultasi darurat, silakan hubungi WhatsApp kami kapan saja.',
     'practice': 'Area praktik kami meliputi:\n\n🏢 Hukum Perusahaan\n⚖️ Hukum Pidana\n📋 Hukum Perdata\n👨‍👩‍👧 Hukum Keluarga\n💡 Hak Kekayaan Intelektual\n🏛️ Hukum Ketenagakerjaan',
     'price': 'Biaya layanan bervariasi tergantung jenis kasus. Konsultasi awal GRATIS.\n\nUntuk penawaran detail, silakan hubungi kami melalui WhatsApp atau isi form konsultasi di website.',
-    'location': 'Kantor kami berlokasi di:\n\n📍 DKI Jakarta, Indonesia\n\nKunjungi kami pada jam kerja atau buat janji terlebih dahulu.',
+    'location': 'Kantor kami berlokasi di:\n\n📍 Jakarta:\nDKI Jakarta, Indonesia\n\n📍 Malang:\nJl. Simpang Kepuh Utara No.56A, RW.1, Bandungrejosari, Kec. Sukun, Kota Malang, Jawa Timur 65148\n\nKunjungi kami pada jam kerja atau buat janji terlebih dahulu.',
     'default': 'Terima kasih atas pertanyaannya! 😊\n\nUntuk informasi lebih detail, silakan:\n📞 WhatsApp: 085190665556\n📧 Email: Balqismaulina96@gmail.com\n\nAtau isi form konsultasi di halaman Contact.'
   };
 
