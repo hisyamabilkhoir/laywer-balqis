@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Navbar scroll effect & active link highlight ──
   function onScroll() {
     const scrollY = window.scrollY;
-    navbar.classList.toggle('scrolled', scrollY > 50);
+    if (navbar) {
+      navbar.classList.toggle('scrolled', scrollY > 50);
+    }
 
     let current = '';
     sections.forEach(section => {
@@ -45,9 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
   onScroll();
 
   // ── Mobile menu toggle ──
-  menuToggle.addEventListener('click', () => {
-    navLinksEl.classList.toggle('open');
-  });
+  if (menuToggle && navLinksEl) {
+    menuToggle.addEventListener('click', () => {
+      navLinksEl.classList.toggle('open');
+    });
+  }
 
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -197,19 +201,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Toggle chatbot
-  chatToggle.addEventListener('click', () => {
-    chatWindow.classList.toggle('open');
-  });
+  if (chatToggle && chatWindow) {
+    chatToggle.addEventListener('click', () => {
+      chatWindow.classList.toggle('open');
+    });
+  }
 
-  chatClose.addEventListener('click', () => {
-    chatWindow.classList.remove('open');
-  });
+  if (chatClose && chatWindow) {
+    chatClose.addEventListener('click', () => {
+      chatWindow.classList.remove('open');
+    });
+  }
 
   // Send message
-  chatSend.addEventListener('click', sendUserMessage);
-  chatInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') sendUserMessage();
-  });
+  if (chatSend) {
+    chatSend.addEventListener('click', sendUserMessage);
+  }
+  if (chatInput) {
+    chatInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') sendUserMessage();
+    });
+  }
 
   // Suggestion buttons
   chatSuggestions.forEach(btn => {
